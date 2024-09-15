@@ -21,10 +21,10 @@ const NavLinks = {
 
 function Navigation() {
   return (
-    <header className="p-3 grid grid-cols-[40fr_70fr] items-center max-w-[996px] mx-auto border border-primary-800 rounded-xl my-5 ">
+    <header className="p-3 py-5 lg:py-3 grid grid-cols-[40fr_70fr] items-center max-w-[996px] mx-auto border border-primary-800 lg:rounded-xl lg:my-5 ">
       <Logo />
-      <nav className=" text-primary-100 flex items-center justify-between">
-        <ul className="flex items-center font-medium gap-7 ">
+      <nav className=" text-primary-100  items-center justify-between hidden lg:flex">
+        <ul className="flex items-center font-medium gap-7">
           {NavLinks.links.map((link, index) => (
             <li key={index}>
               <Link href={link.href}>{link.title}</Link>
@@ -32,7 +32,7 @@ function Navigation() {
           ))}
         </ul>
         <div className="flex items-center gap-4">
-          <ul className="flex items-center gap-3">
+          <ul className="items-center gap-3 hidden lg:flex">
             {NavLinks.socials.map((social, index) => (
               <li key={index}>
                 <Link href={social.href}>{social.icon}</Link>
