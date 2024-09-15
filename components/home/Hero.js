@@ -4,6 +4,7 @@ import smallThreeCards from "../../public/images/three-cards-small.svg";
 
 import mainBanner from "../../public/images/main-banner.png";
 import Praticles from "./Praticles";
+import EmblaCarousel from "../ui/EmblaCarousel";
 
 const AppPlatforms = [
   {
@@ -20,7 +21,7 @@ const AppPlatforms = [
 
 function Hero() {
   return (
-    <section className="max-w-[1200px] mx-auto text-center pt-6 relative overflow-x-hidden">
+    <section className="max-w-[1200px] mx-auto text-center pt-6 relative overflow-x-hidden px-5 lg:px-0">
       <Praticles />
       <div className=" lg:max-w-[800px] mx-auto">
         <Image
@@ -51,7 +52,15 @@ function Hero() {
       <Image
         src={mainBanner}
         alt="Main banner image from amuse.so"
-        className="max-w-[1164px] mx-auto"
+        className="max-w-[1164px] hidden lg:inline-block mx-auto"
+      />
+      <EmblaCarousel
+        slides={[
+          "/images/slide-1.png",
+          "/images/slide-2.png",
+          "/images/slide-3.png",
+        ]}
+        options={{ direction: "rtl" }}
       />
     </section>
   );
