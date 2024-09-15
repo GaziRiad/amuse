@@ -60,7 +60,6 @@ function Hero() {
           "/images/slide-2.png",
           "/images/slide-3.png",
         ]}
-        options={{ direction: "rtl" }}
       />
     </section>
   );
