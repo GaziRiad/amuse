@@ -21,7 +21,7 @@ const AppPlatforms = [
 
 function Hero() {
   return (
-    <section className="max-w-[1200px] mx-auto text-center pt-6 relative overflow-x-hidden px-5 lg:px-0">
+    <section className="max-w-[1200px] mx-auto text-center pt-6 relative overflow-x-hidden lg:px-0">
       <Praticles />
       <div className=" lg:max-w-[800px] mx-auto">
         <Image
@@ -60,6 +60,7 @@ function Hero() {
           "/images/slide-2.png",
           "/images/slide-3.png",
         ]}
+        options={{}}
       />
     </section>
   );
