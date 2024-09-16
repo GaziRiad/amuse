@@ -60,7 +60,7 @@ function Plans() {
               {plan.features.map((feature, index) => (
                 <li
                   key={index}
-                  className="flex items-center gap-3 text-primary-100"
+                  className="flex items-start gap-[14px] text-sm text-primary-100 lg:items-center lg:gap-3 lg:text-base"
                 >
                   <Image src={icon} alt="Check icon from amuse.so website" />
                   <span>{feature}</span>
