@@ -19,7 +19,7 @@ function Hero() {
           alt="Small three cards image on hero section on amuse.so"
           className="mx-auto inline-block object-cover object-center"
         />
-        <h1 className="mb-6 bg-mainheading-gradient bg-clip-text text-[40px] font-extrabold leading-[1.2] text-transparent lg:text-[68px]">
+        <h1 className="mx-auto mb-6 max-w-[650px] bg-mainheading-gradient bg-clip-text text-[40px] font-extrabold leading-[1.2] text-transparent lg:max-w-full lg:text-[68px]">
           Unlock Your Potential, One Spark at a Time
         </h1>
         <p className="mb-10 text-base font-medium text-primary-100">
