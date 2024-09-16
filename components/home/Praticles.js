@@ -7,27 +7,27 @@ function Praticles() {
       <Image
         src={praticle}
         alt="praticle image from amuse.so"
-        className="object-cover object-center absolute"
+        className="absolute z-0 object-cover object-center"
       />
       <Image
         src={praticle}
         alt="praticle image from amuse.so"
-        className="object-cover object-center absolute"
+        className="absolute z-0 object-cover object-center"
       />
       <Image
         src={praticle}
         alt="praticle image from amuse.so"
-        className="object-cover object-center absolute"
+        className="absolute z-0 object-cover object-center"
       />
       <Image
         src={praticle}
         alt="praticle image from amuse.so"
-        className="object-cover object-center absolute"
+        className="absolute z-0 object-cover object-center"
       />
       <Image
         src={praticle}
         alt="praticle image from amuse.so"
-        className="object-cover object-center absolute"
+        className="absolute z-0 object-cover object-center"
       />
     </div>
   );

@@ -7,44 +7,17 @@ import img4 from "../../public/images/why-section/light.png";
 
 import Praticles from "./Praticles";
 
-// const Cards = [
-//   [
-//     {
-//       title: "Three Cards a Day",
-//       text: "Escape information overload! We curate just three cards daily for optimal retention, making every piece of knowledge count.",
-//       img: "/images/why-section/three-cards.svg",
-//     },
-//     {
-//       title: "Curated Topics",
-//       text: "Focusing on five key topics enhances meaningful learning, aligning with cognitive science principles that emphasize less is more for effective learning.",
-//       img: "images/why-section/topics.svg",
-//     },
-//   ],
-//   [
-//     {
-//       title: "Three Cards a Day",
-//       text: "Escape information overload! We curate just three cards daily for optimal retention, making every piece of knowledge count.",
-//       img: "/images/why-section/three-cards.svg",
-//     },
-//     {
-//       title: "Curated Topics",
-//       text: "Focusing on five key topics enhances meaningful learning, aligning with cognitive science principles that emphasize less is more for effective learning.",
-//       img: "images/why-section/topics.svg",
-//     },
-//   ],
-// ];
-
 function GridCards() {
   return (
     <div className="flex flex-col gap-6 text-center text-white">
       <div className="flex flex-col items-stretch gap-5 lg:flex-row">
-        <div className="card -3xl flex-1 rounded-3xl bg-card-gradient pt-[90px]">
+        <div className="card flex-1 rounded-3xl bg-card-gradient pt-[90px]">
           <Praticles />
-          <div className="mx-auto max-w-[320px]">
+          <div className="relative mx-auto max-w-[320px]">
             <Image
               src={img1}
               alt="Three cards image from amuse.so"
-              className="mx-auto mb-[60px] w-56 object-cover"
+              className="relative z-10 mx-auto mb-[60px] w-56 object-cover"
             />
             <p className="mb-2 text-2xl font-medium lg:text-3xl">
               Three Cards a Day
@@ -61,7 +34,7 @@ function GridCards() {
             <Image
               src={img2}
               alt="Three cards image from amuse.so"
-              className="mb-[60px] object-cover"
+              className="relative z-10 mb-[60px] object-cover px-5 lg:px-0"
             />
             <p className="mb-2 text-2xl font-medium lg:text-3xl">
               Curated Topics
@@ -91,7 +64,7 @@ function GridCards() {
           <Image
             src={img3}
             alt="Three cards image from amuse.so"
-            className="mx-auto mb-28 flex max-w-[380px] object-cover lg:max-w-[609px]"
+            className="relative z-10 mx-auto mb-28 flex w-full object-cover px-7 lg:max-w-[609px] lg:px-0"
           />
         </div>
 
@@ -101,7 +74,7 @@ function GridCards() {
             <Image
               src={img4}
               alt="Three cards image from amuse.so"
-              className="mx-auto mb-9 w-52 object-cover"
+              className="relative z-10 mx-auto mb-9 w-52 object-cover"
             />
             <p className="mb-2 text-2xl font-medium lg:text-3xl">
               Spark Your Curiosity
