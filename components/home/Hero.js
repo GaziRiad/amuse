@@ -5,19 +5,7 @@ import smallThreeCards from "../../public/images/three-cards-small.svg";
 import mainBanner from "../../public/images/main-banner.png";
 import Praticles from "./Praticles";
 import EmblaCarousel from "../ui/EmblaCarousel";
-
-const AppPlatforms = [
-  {
-    name: "iOS",
-    image: "/images/app-store.png",
-    href: "#",
-  },
-  {
-    name: "Android",
-    image: "/images/google-play.png",
-    href: "#",
-  },
-];
+import MobileApps from "../MobileApps";
 
 function Hero() {
   return (
@@ -39,22 +27,12 @@ function Hero() {
         </p>
       </div>
 
-      <div className="mb-10 flex items-center justify-center gap-6">
-        {AppPlatforms.map((platform, index) => (
-          <Image
-            key={index}
-            src={platform.image}
-            alt={`Image of ${platform.title}`}
-            width={160}
-            height={160}
-            className="max-w-[152px] object-cover object-center"
-          />
-        ))}
-      </div>
+      <MobileApps />
+
       <Image
         src={mainBanner}
         alt="Main banner image from amuse.so"
-        className="mx-auto hidden max-w-[1164px] lg:inline-block"
+        className="mx-auto mt-10 hidden max-w-[1164px] lg:inline-block"
       />
       <EmblaCarousel
         slides={[

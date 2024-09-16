@@ -1,3 +1,4 @@
+import Cta from "@/components/home/Cta";
 import Hero from "@/components/home/Hero";
 import OurVision from "@/components/home/OurVision";
 import Plans from "@/components/home/Plans";
@@ -10,6 +11,7 @@ function page() {
       <WhyAmuse />
       <OurVision />
       <Plans />
+      <Cta />
     </div>
   );
 }

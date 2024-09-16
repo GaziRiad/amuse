@@ -27,6 +27,8 @@ module.exports = {
         },
       },
       backgroundImage: {
+        "cta-img": "url('/images/journey-background.png')",
+
         "mainheading-gradient":
           "linear-gradient(270deg, #BD91FF -4.87%, #FFFFFF 98.06%)",
         "secondary-heading-gradient":
