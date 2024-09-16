@@ -49,13 +49,13 @@ function GridCards() {
       </div>
       {/*  */}
       <div className="flex flex-col items-stretch gap-5 lg:flex-row">
-        <div className="card flex flex-[2] flex-col-reverse justify-end rounded-3xl bg-card-gradient pt-10 lg:flex-col">
+        <div className="card flex flex-[2] flex-col-reverse justify-end rounded-3xl bg-card-gradient pt-36 lg:flex-col lg:pt-10">
           <Praticles />
           <div className="mx-auto max-w-[380px]">
             <p className="mb-2 text-2xl font-medium lg:text-3xl">
               Spaced Learning
             </p>
-            <p className="mb-[74px] text-base text-[#c1c1c1]">
+            <p className="mb-8 text-base text-[#c1c1c1] lg:mb-[74px]">
               Our spaced repetition model fast-tracks lasting learning by
               reinforcing memory over time. It aligns with how your brain
               prefers to learn, providing the space to digest and grow.
