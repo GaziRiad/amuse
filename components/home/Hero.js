@@ -21,7 +21,7 @@ const AppPlatforms = [
 
 function Hero() {
   return (
-    <section className="max-w-[1200px] mx-auto text-center pt-6 relative overflow-x-hidden lg:px-0">
+    <section className="max-w-[1200px] mx-auto text-center pt-6 relative overflow-x-hidden lg:px-0 mb-32">
       <Praticles />
       <div className=" lg:max-w-[800px] mx-auto">
         <Image
@@ -29,7 +29,7 @@ function Hero() {
           alt="Small three cards image on hero section on amuse.so"
           className="object-center object-cover inline-block mx-auto"
         />
-        <h1 className="text-transparent bg-clip-text bg-custom-gradient font-extrabold text-[40px] lg:text-[68px] leading-[1.2] mb-6">
+        <h1 className="text-transparent bg-clip-text bg-mainheading-gradient font-extrabold text-[40px] lg:text-[68px] leading-[1.2] mb-6">
           Unlock Your Potential, One Spark at a Time
         </h1>
         <p className="mb-10 font-medium text-base text-primary-100">
