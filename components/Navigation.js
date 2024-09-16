@@ -21,7 +21,7 @@ const NavLinks = {
 
 function Navigation() {
   return (
-    <header className="mx-auto grid max-w-[996px] grid-cols-[40fr_70fr] items-center border border-primary-800 p-3 py-5 lg:my-5 lg:rounded-xl lg:py-3">
+    <header className="border-primary-600 mx-auto grid max-w-[996px] grid-cols-[40fr_70fr] items-center border p-3 py-5 lg:my-5 lg:rounded-xl lg:py-3">
       <Logo />
       <nav className="hidden items-center justify-between text-primary-100 lg:flex">
         <ul className="flex items-center gap-7 font-medium">

@@ -46,11 +46,11 @@ const EmblaCarousel = (props) => {
   const [emblaRef, emblaApi] = useEmblaCarousel({ ...options, startIndex: 1 });
 
   return (
-    <section className="embla lg:hidden">
+    <section className="embla mt-10 lg:hidden">
       <div className="embla__viewport" ref={emblaRef}>
         <div className="embla__container">
           {slides.map((slide, index) => (
-            <div className="embla__slide " key={index}>
+            <div className="embla__slide" key={index}>
               <div className="embla__slide__number">
                 <Image
                   src={slide}
