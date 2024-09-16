@@ -21,27 +21,33 @@ const NavLinks = {
 
 function Navigation() {
   return (
-    <header className="p-3 py-5 lg:py-3 grid grid-cols-[40fr_70fr] items-center max-w-[996px] mx-auto border border-primary-800 lg:rounded-xl lg:my-5 ">
+    <header className="mx-auto grid max-w-[996px] grid-cols-[40fr_70fr] items-center border border-primary-800 p-3 py-5 lg:my-5 lg:rounded-xl lg:py-3">
       <Logo />
-      <nav className=" text-primary-100  items-center justify-between hidden lg:flex">
-        <ul className="flex items-center font-medium gap-7">
+      <nav className="hidden items-center justify-between text-primary-100 lg:flex">
+        <ul className="flex items-center gap-7 font-medium">
           {NavLinks.links.map((link, index) => (
-            <li key={index}>
+            <li
+              key={index}
+              className="hover:text-primary-500 transition-all duration-300"
+            >
               <Link href={link.href}>{link.title}</Link>
             </li>
           ))}
         </ul>
         <div className="flex items-center gap-4">
-          <ul className="items-center gap-3 hidden lg:flex">
+          <ul className="hidden items-center gap-3 lg:flex">
             {NavLinks.socials.map((social, index) => (
-              <li key={index}>
+              <li
+                key={index}
+                className="hover:text-primary-500 transition-all duration-300"
+              >
                 <Link href={social.href}>{social.icon}</Link>
               </li>
             ))}
           </ul>
           <Link
             href="/app"
-            className="capitalize px-5 text-sm text-center rounded-[4px] py-2 font-bold gap-2 flex items-center bg-primary-200 text-primary-700"
+            className="text-primary-500 flex items-center gap-2 rounded-[4px] bg-primary-200 px-5 py-2 text-center text-sm font-bold capitalize"
           >
             <span>
               <RiDownload2Line size={20} />

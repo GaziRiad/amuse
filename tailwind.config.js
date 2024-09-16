@@ -19,9 +19,11 @@ module.exports = {
           // 800: "#0369a1",
           100: "#EBEAEC",
           200: "#EEE3FF",
-          700: "#8E4EED",
-          800: "#39323E",
-          900: "#130D1A",
+          500: "#8E4EED",
+          600: "#39323E",
+          700: "#27212E",
+          800: "#130D1A",
+          900: "#100917",
         },
       },
       backgroundImage: {
@@ -30,6 +32,9 @@ module.exports = {
         "secondary-heading-gradient":
           "linear-gradient(90deg, #7F7D89 12.36%, #F8F7F8 81.18%)",
         "card-gradient": "linear-gradient(180deg, #060409 0%, #140228 100%)",
+        "vision-gradient": "linear-gradient(180deg, #6736F4 0%, #4072ED 100%)",
+        "paidplan-gradient":
+          "linear-gradient(180deg, #8A4AE9 0%, #F38222 49%, #E44C67 100%)",
       },
     },
   },

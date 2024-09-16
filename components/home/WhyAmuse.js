@@ -2,7 +2,7 @@ import GridCards from "./GridCards";
 
 function WhyAmuse() {
   return (
-    <section className="mx-auto max-w-[1200px] px-5 pb-32">
+    <section className="mx-auto mb-28 max-w-[1200px] px-5">
       <h2 className="mb-5 bg-secondary-heading-gradient bg-clip-text text-center text-4xl font-bold text-transparent lg:text-[52px]">
         Why Amuse?
       </h2>
