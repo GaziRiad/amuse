@@ -32,7 +32,7 @@ function Hero() {
       <Image
         src={mainBanner}
         alt="Main banner image from amuse.so"
-        className="mx-auto mt-10 hidden max-w-[1164px] lg:inline-block"
+        className="mx-auto mt-10 hidden max-w-[1164px] xl:inline-block"
       />
       <EmblaCarousel
         slides={[

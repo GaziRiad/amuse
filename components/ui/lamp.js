@@ -16,7 +16,7 @@ export function LampDemo() {
         }}
         className="mt-8 bg-gradient-to-br from-slate-300 to-slate-500 bg-clip-text py-4 text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl"
       >
-        Start Your Journey of <br /> Curiosity
+        Build lamps <br /> the right way
       </motion.h1>
     </LampContainer>
   );
@@ -26,7 +26,7 @@ export const LampContainer = ({ children, className }) => {
   return (
     <div
       className={cn(
-        "relative z-0 -mt-10 flex min-h-screen w-full flex-col items-center justify-center overflow-hidden rounded-md bg-primary-800",
+        "relative z-0 flex min-h-screen w-full flex-col items-center justify-center overflow-hidden rounded-md bg-primary-800",
         className,
       )}
     >
@@ -89,7 +89,7 @@ export const LampContainer = ({ children, className }) => {
 
         <div className="absolute inset-auto z-40 h-44 w-full -translate-y-[12.5rem] bg-primary-800"></div>
       </div>
-      <div className="relative z-50 flex -translate-y-80 flex-col items-center px-5">
+      <div className="relative z-50 flex -translate-y-80 flex-col items-center px-5 pt-40">
         {children}
       </div>
     </div>

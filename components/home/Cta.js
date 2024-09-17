@@ -11,7 +11,7 @@ import { motion } from "framer-motion";
 function Cta() {
   return (
     <>
-      <LampContainer className="-mb-52 -mt-40 flex gap-44 pt-96 lg:mt-0 lg:gap-20 lg:pt-56">
+      <LampContainer className="-mb-52 -mt-40 flex pt-96 xl:mt-0 xl:pt-80">
         <div className="">
           <motion.div
             initial={{ opacity: 0, y: 200 }}
