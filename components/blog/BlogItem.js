@@ -4,7 +4,10 @@ import Link from "next/link";
 
 function BlogItem({ post }) {
   return (
-    <Link href="#" className="rounded-xl bg-[#181A2A] px-[10px] py-4">
+    <Link
+      href={`/blog/${post.slug.current}`}
+      className="rounded-xl bg-[#181A2A] px-[10px] py-4"
+    >
       <Image
         src={urlFor(post.mainImage).url()}
         alt={`Image of post of ${post.title} from amuse.so, written by ${post.author.name}`}

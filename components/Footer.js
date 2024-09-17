@@ -4,7 +4,7 @@ import footerImg from "../public/images/footer-logo.svg";
 
 function Footer() {
   return (
-    <footer className="relative z-10 -mt-52">
+    <footer className="relative z-10">
       <p className="mb-10 text-center font-medium text-primary-100">
         © 2024 All right reserved. Amuse
       </p>
