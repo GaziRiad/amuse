@@ -9,8 +9,8 @@ import { useEffect, useState } from "react";
 
 const NavLinks = {
   links: [
-    { title: "Why Amuse", href: "/" },
-    { title: "Our Vision", href: "/" },
+    { title: "Why Amuse", href: "/#why-amuse" },
+    { title: "Our Vision", href: "/#vision" },
     { title: "Blog", href: "/blog" },
   ],
   socials: [

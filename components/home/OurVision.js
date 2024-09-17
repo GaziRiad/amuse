@@ -4,12 +4,12 @@ import quoteImage from "../../public/images/quote-icon.svg";
 
 function OurVision() {
   return (
-    <section className="mx-auto mb-28 max-w-[1200px] px-5">
+    <section id="vision" className="mx-auto mb-28 max-w-[1200px] px-5 pt-4">
       <h2 className="mb-5 bg-secondary-heading-gradient bg-clip-text text-center text-4xl font-bold text-transparent lg:mb-10 lg:text-[52px]">
         Our Vision
       </h2>
 
-      <blockquote className="bg-vision-gradient relative mx-auto max-w-[996px] rounded-[20px] px-4 py-20 text-center text-2xl font-medium leading-10 text-white lg:px-20 lg:py-[60px] lg:text-[28px]">
+      <blockquote className="relative mx-auto max-w-[996px] rounded-[20px] bg-vision-gradient px-4 py-20 text-center text-2xl font-medium leading-10 text-white lg:px-20 lg:py-[60px] lg:text-[28px]">
         <Image
           src={quoteImage}
           className="absolute right-4 top-4 object-cover"
