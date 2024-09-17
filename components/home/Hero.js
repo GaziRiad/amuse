@@ -9,7 +9,7 @@ import MobileApps from "../MobileApps";
 
 function Hero() {
   return (
-    <section className="relative mx-auto mb-32 max-w-[1200px] overflow-x-hidden pt-6 text-center lg:px-0">
+    <section className="relative mx-auto mb-32 max-w-[1200px] overflow-x-hidden text-center lg:px-0">
       <div className="hidden lg:block">
         <Praticles />
       </div>

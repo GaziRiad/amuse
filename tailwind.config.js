@@ -24,6 +24,7 @@ module.exports = {
           900: "#100917",
         },
       },
+
       backgroundImage: {
         "cta-img": "url('/images/journey-background.png')",
 

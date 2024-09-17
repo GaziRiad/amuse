@@ -32,12 +32,12 @@ const PLANS = [
 
 function Plans() {
   return (
-    <section className="mx-auto -mb-72 max-w-[1200px] px-5 lg:mb-0">
+    <section className="mx-auto max-w-[1200px] px-5 lg:mb-0">
       <h2 className="mb-5 bg-secondary-heading-gradient bg-clip-text text-center text-4xl font-bold text-transparent lg:mb-10 lg:text-[52px]">
         Plans & Features
       </h2>
 
-      <div className="grid grid-cols-1 items-center gap-5 lg:grid-cols-[45fr_55fr]">
+      <div className="relative z-10 grid grid-cols-1 items-center gap-5 lg:grid-cols-[45fr_55fr]">
         {PLANS.map((plan, index) => (
           <div
             key={index}

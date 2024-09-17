@@ -34,7 +34,7 @@ function Navigation() {
 
   return (
     <>
-      <header className="mx-auto grid max-w-[996px] grid-cols-[40fr_70fr] items-center border border-primary-600 p-3 py-5 lg:my-5 lg:rounded-xl lg:py-3">
+      <header className="mx-auto mb-10 grid max-w-[996px] grid-cols-[40fr_70fr] items-center border border-primary-600 p-3 py-5 lg:mt-5 lg:rounded-xl lg:py-3">
         <Logo />
         <nav className="flex items-center justify-between justify-self-end text-primary-100 lg:justify-self-auto">
           <ul className="hidden items-center gap-7 font-medium lg:flex">

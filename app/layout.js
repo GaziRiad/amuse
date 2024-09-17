@@ -2,6 +2,7 @@ import { Poppins } from "next/font/google";
 
 import Navigation from "@/components/Navigation";
 import "./styles/globals.css";
+import Footer from "@/components/Footer";
 
 export const metadata = {
   title: "Amuse",
@@ -25,6 +26,7 @@ export default function RootLayout({ children }) {
       <body className={`bg-primary-800 antialiased ${poppins.className}`}>
         <Navigation />
         {children}
+        <Footer />
       </body>
     </html>
   );
