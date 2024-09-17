@@ -14,10 +14,10 @@ const NavLinks = {
     { title: "Blog", href: "/blog" },
   ],
   socials: [
-    { icon: <FaFacebook size={32} />, href: "#" },
-    { icon: <RiInstagramFill size={34} />, href: "#" },
-    { icon: <FaLinkedin size={32} />, href: "#" },
-    { icon: <FaXTwitter size={32} />, href: "#" },
+    { icon: <FaFacebook size={22} />, href: "#" },
+    { icon: <RiInstagramFill size={24} />, href: "#" },
+    { icon: <FaLinkedin size={22} />, href: "#" },
+    { icon: <FaXTwitter size={22} />, href: "#" },
   ],
 };
 

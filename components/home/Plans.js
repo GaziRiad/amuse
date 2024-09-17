@@ -32,7 +32,7 @@ const PLANS = [
 
 function Plans() {
   return (
-    <section className="relative z-10 mx-auto max-w-[1200px] px-5">
+    <section className="mx-auto -mb-72 max-w-[1200px] px-5 lg:mb-0">
       <h2 className="mb-5 bg-secondary-heading-gradient bg-clip-text text-center text-4xl font-bold text-transparent lg:mb-10 lg:text-[52px]">
         Plans & Features
       </h2>
