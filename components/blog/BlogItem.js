@@ -8,13 +8,13 @@ function BlogItem({ post }) {
       <Image
         src={urlFor(post.mainImage).url()}
         alt={`Image of post of ${post.title} from amuse.so, written by ${post.author.name}`}
-        className="mb-6 h-[240px] rounded-md object-cover object-center"
+        className="mb-6 h-[240px] w-full rounded-md object-cover object-center"
         width={400}
         height={400}
       />
 
       <div className="p-2">
-        <div className="mb-4 flex items-center gap-3 text-sm font-medium text-[#4B6BFB]">
+        <div className="mb-4 flex flex-wrap items-center gap-3 text-sm font-medium text-[#4B6BFB]">
           {post.categories.map((category, index) => (
             <span
               key={index}
