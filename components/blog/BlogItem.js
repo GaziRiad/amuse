@@ -6,7 +6,7 @@ function BlogItem({ post }) {
   return (
     <Link
       href={`/blog/${post.slug.current}`}
-      className="rounded-xl bg-[#181A2A] px-[10px] py-4"
+      className="rounded-xl bg-[#181A2A] px-[10px] py-4 transition-all duration-200 hover:bg-[#181A2A]/75"
     >
       <Image
         src={urlFor(post.mainImage).url()}
