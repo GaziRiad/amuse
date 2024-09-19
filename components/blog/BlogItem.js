@@ -1,4 +1,5 @@
 import { urlFor } from "@/blog/lib/sanity-img";
+import { format } from "date-fns";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -42,7 +43,7 @@ function BlogItem({ post }) {
             />
             <p className="">{post.author.name}</p>
           </div>
-          <p>{post.date}</p>
+          <p>{format(new Date(post.publishedAt), "dd MMM, yyyy")}</p>
         </div>
       </div>
     </Link>
