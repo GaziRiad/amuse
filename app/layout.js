@@ -1,3 +1,4 @@
+import localFont from "next/font/local";
 import { Poppins } from "next/font/google";
 
 import Navigation from "@/components/Navigation";
@@ -18,6 +19,11 @@ const poppins = Poppins({
   weight: ["300", "400", "500", "600", "700", "800", "900"],
   style: ["normal", "italic"],
   subsets: ["latin"],
+});
+
+export const soursSerif = localFont({
+  src: "./fonts/SourceSerifPro-Regular.ttf",
+  variable: "--font-sourceserif",
 });
 
 export default function RootLayout({ children }) {

@@ -11,6 +11,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        quote: "var(--font-sourceserif)",
+      },
+
       colors: {
         primary: {
           100: "#EBEAEC",
