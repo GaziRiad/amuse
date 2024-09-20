@@ -1,10 +1,26 @@
 import { urlFor } from "@/blog/lib/sanity-img";
 import Cta from "@/components/home/Cta";
 import { myPortableTextComponents } from "@/lib/constants";
-import { fetchPost } from "@/lib/services/api";
+import { fetchPost, getAllSlugs } from "@/lib/services/api";
 import { format } from "date-fns";
 import { PortableText } from "next-sanity";
 import Image from "next/image";
+
+export const revalidate = 3600;
+
+export async function generateStaticParams() {
+  const slugs = await getAllSlugs();
+
+  return slugs;
+}
+
+export async function generateMetadata({ params }) {
+  const { title } = await fetchPost(params.slug);
+
+  return {
+    title: `${title}`,
+  };
+}
 
 async function page({ params }) {
   const { slug } = params;

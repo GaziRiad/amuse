@@ -1,3 +1,7 @@
+export const metadata = {
+  title: "Privacy and policy",
+};
+
 function page() {
   return (
     <div className="mx-auto mb-10 mt-6 max-w-[1200px] border-b border-primary-700 bg-primary-800 px-5 pb-16 text-primary-100 lg:mb-16 lg:mt-14">

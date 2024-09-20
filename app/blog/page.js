@@ -5,20 +5,22 @@ import Cta from "@/components/home/Cta";
 import { TOTAL_POSTS_BLOG } from "@/lib/constants";
 import { fetchBlogs } from "@/lib/services/api";
 
-export const revalidate = 0;
+export const metadata = {
+  title: "Blog",
+};
 
-async function page({ searchParams }) {
+export const revalidate = 3600;
+
+async function page({ params }) {
   //Building the filter
-  const category = searchParams.category ?? "view-all";
-  let page = searchParams.page ?? 1;
+  const category = params.category ?? "view-all";
+  let page = params.page ?? 1;
   page = Number(page);
 
   const filter = {
     category,
     page,
   };
-
-  console.log(filter);
 
   const data = await fetchBlogs(filter, TOTAL_POSTS_BLOG);
 

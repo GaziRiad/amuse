@@ -4,6 +4,10 @@ import OurVision from "@/components/home/OurVision";
 import Plans from "@/components/home/Plans";
 import WhyAmuse from "@/components/home/WhyAmuse";
 
+export const metadata = {
+  title: "Home",
+};
+
 function page() {
   return (
     <div className="">
