@@ -20,7 +20,7 @@ async function page({ params }) {
 
   return (
     <>
-      <div className="mx-auto max-w-[840px] px-5">
+      <div className="relative z-10 mx-auto -mb-10 max-w-[840px] px-5">
         <div className="text-white">
           <div className="mb-4 flex flex-wrap items-center gap-2">
             {post.categories.map((category, index) => (
@@ -63,6 +63,7 @@ async function page({ params }) {
           </div>
         </div>
       </div>
+
       <Cta />
     </>
   );
