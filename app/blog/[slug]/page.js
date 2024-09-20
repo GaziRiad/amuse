@@ -32,13 +32,15 @@ async function page({ params }) {
               </span>
             ))}
           </div>
-          <h1 className="mb-5 text-4xl font-semibold">{post.title}</h1>
+          <h1 className="mb-5 text-2xl font-semibold lg:text-4xl">
+            {post.title}
+          </h1>
           <div className="mb-8 flex items-center gap-5 font-medium text-[#97989F]">
             <div className="flex items-center gap-3">
               <Image
                 src={urlFor(post.author?.image)?.url()}
                 alt={`Image of ${post.author.name} the author of ${post.title} from amuse.so`}
-                className="h-9 w-9 rounded-full object-cover object-center"
+                className="h-6 w-6 rounded-full object-cover object-center lg:h-9 lg:w-9"
                 width={160}
                 height={160}
               />
@@ -49,7 +51,7 @@ async function page({ params }) {
           <Image
             src={urlFor(post.mainImage)?.url()}
             alt={`Image of post of ${post.title} from amuse.so, written by ${post.author.name}`}
-            className="mb-8 h-[480px] w-full rounded-xl object-cover object-center"
+            className="mb-8 h-64 w-full rounded-xl object-cover object-center lg:h-[480px]"
             width={1200}
             height={1200}
           />
