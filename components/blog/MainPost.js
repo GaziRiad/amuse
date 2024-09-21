@@ -1,9 +1,12 @@
 import { urlFor } from "@/blog/lib/sanity-img";
+import { fetchLatestPost } from "@/lib/services/api";
 import { format } from "date-fns";
 import Image from "next/image";
 import Link from "next/link";
 
-function MainPost({ post }) {
+async function MainPost() {
+  const post = await fetchLatestPost();
+
   console.log(post.slug.current);
 
   return (
