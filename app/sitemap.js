@@ -1,4 +1,5 @@
 import { client } from "@/blog/lib/client";
+import { URL } from "@/lib/constants";
 
 async function getData() {
   const query = `*[_type == "post"] {
@@ -12,7 +13,7 @@ async function getData() {
 export default async function sitemap() {
   const data = await getData();
   const posts = data.map((post) => ({
-    url: `http://localhost:3000/blog/${post.currentSlug}`,
+    url: `${URL}/blog/${post.currentSlug}`,
     lastModified: post.lastModified,
     changeFrequency: "weekly",
     priority: 0.9,
@@ -20,25 +21,25 @@ export default async function sitemap() {
 
   return [
     {
-      url: "http://localhost:3000/",
+      url: `${URL}`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 1,
     },
     {
-      url: "http://localhost:3000/privacy-policy",
+      url: `${URL}/privacy-policy`,
       lastModified: new Date(),
       changeFrequency: "yearly",
       priority: 0.8,
     },
     {
-      url: "http://localhost:3000/terms-of-use",
+      url: `${URL}/terms-of-use`,
       lastModified: new Date(),
       changeFrequency: "yearly",
       priority: 0.8,
     },
     {
-      url: "http://localhost:3000/blog",
+      url: `${URL}/blog`,
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.9,
