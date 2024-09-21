@@ -6,7 +6,7 @@ import { format } from "date-fns";
 import { PortableText } from "next-sanity";
 import Image from "next/image";
 
-export const revalidate = 3600;
+export const revalidate = 86400;
 
 export async function generateStaticParams() {
   const slugs = await getAllSlugs();
@@ -16,7 +16,6 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }) {
   const { title } = await fetchPost(params.slug, params);
-  // console.log(post);
   return {
     title: `${title}`,
   };
