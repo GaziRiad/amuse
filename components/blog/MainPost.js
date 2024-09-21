@@ -10,7 +10,7 @@ function MainPost({ post }) {
     <section className="mx-auto max-w-[1200px] px-5">
       <Link
         href={`/blog/${post.slug.current}`}
-        className="relative mb-12 hidden overflow-hidden rounded-xl bg-cover bg-center bg-no-repeat p-10 pt-44 text-white lg:mb-28 lg:block"
+        className="relative mb-12 hidden overflow-hidden rounded-xl bg-cover bg-center bg-no-repeat p-10 pt-44 text-white lg:block"
         style={{
           backgroundImage: `url(${urlFor(post.mainImage).url()})`,
         }}

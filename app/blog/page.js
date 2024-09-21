@@ -1,3 +1,4 @@
+import BlogNavigation from "@/components/blog/BlogNavigation";
 import BlogPosts from "@/components/blog/BlogPosts";
 import MainPost from "@/components/blog/MainPost";
 import NoBlogs from "@/components/blog/NoBlogs";
@@ -37,6 +38,7 @@ async function page({ searchParams }) {
   return (
     <div className="">
       <MainPost post={firstPost} />
+      <BlogNavigation />
       <BlogPosts posts={Posts.slice(0)} count={totalPages} />
       <Cta />
     </div>
