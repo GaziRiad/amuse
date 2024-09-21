@@ -11,9 +11,9 @@ export const metadata = {
 
 export const revalidate = 3600;
 
-async function page({ params }) {
+async function page({ searchparams }) {
   //Building the filter
-  const category = params.category ?? "view-all";
+  const category = searchparams.category ?? "view-all";
   let page = params.page ?? 1;
   page = Number(page);
 
