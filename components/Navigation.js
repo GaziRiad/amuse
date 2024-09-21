@@ -1,25 +1,10 @@
 "use client";
 
-import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
-import { RiDownload2Line, RiInstagramFill } from "react-icons/ri";
+import { NavLinks } from "@/lib/constants";
 import Logo from "./ui/Logo";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-
-const NavLinks = {
-  links: [
-    { title: "Why Amuse", href: "/#why-amuse" },
-    { title: "Our Vision", href: "/#vision" },
-    { title: "Blog", href: "/blog" },
-  ],
-  socials: [
-    { icon: <FaFacebook size={22} />, href: "#" },
-    { icon: <RiInstagramFill size={24} />, href: "#" },
-    { icon: <FaLinkedin size={22} />, href: "#" },
-    { icon: <FaXTwitter size={22} />, href: "#" },
-  ],
-};
+import { RiDownload2Line } from "react-icons/ri";
 
 const event = ({ action, category, label, value }) => {
   window.gtag("event", action, {
@@ -75,7 +60,8 @@ function Navigation() {
               ))}
             </ul>
             <Link
-              href="/app"
+              href="https://amuse.app.link/landing_page"
+              target="_blank"
               className="flex items-center gap-2 rounded-[4px] bg-primary-200 px-5 py-2 text-center text-sm font-bold capitalize text-primary-500"
               onClick={() => getApp()}
             >
