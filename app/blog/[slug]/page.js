@@ -15,8 +15,8 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }) {
-  const { title } = await fetchPost(params.slug);
-
+  const { title } = await fetchPost(params.slug, params);
+  // console.log(post);
   return {
     title: `${title}`,
   };
@@ -25,7 +25,7 @@ export async function generateMetadata({ params }) {
 async function page({ params }) {
   const { slug } = params;
 
-  const post = await fetchPost(slug);
+  const post = await fetchPost(slug, params);
 
   if (!post)
     return (
