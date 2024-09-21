@@ -11,10 +11,11 @@ export const metadata = {
 
 export const revalidate = 3600;
 
-async function page({ searchparams }) {
+async function page({ searchParams }) {
+  console.log(searchParams);
   //Building the filter
-  const category = searchparams.category ?? "view-all";
-  let page = params.page ?? 1;
+  const category = searchParams.category ?? "view-all";
+  let page = searchParams.page ?? 1;
   page = Number(page);
 
   const filter = {
