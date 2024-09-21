@@ -4,6 +4,7 @@ import { Poppins } from "next/font/google";
 import Navigation from "@/components/Navigation";
 import "./styles/globals.css";
 import Footer from "@/components/Footer";
+import GoogleAnalytics from "@/components/GoogleAnalytics";
 
 export const metadata = {
   title: {
@@ -32,6 +33,7 @@ export const soursSerif = localFont({
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <GoogleAnalytics />
       <body className={`bg-primary-800 antialiased ${poppins.className}`}>
         <Navigation />
         {children}
