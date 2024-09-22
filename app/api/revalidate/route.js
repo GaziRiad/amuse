@@ -6,7 +6,7 @@ export async function POST(req) {
   try {
     const { body, isValidSignature } = await parseBody(
       req,
-      process.env.NEXT_PUBLIC_SANITY_HOOK_SECRET || "123456",
+      process.env.SANITY_HOOK_SECRET || "123456",
     );
 
     if (!isValidSignature) {
