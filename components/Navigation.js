@@ -6,22 +6,6 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { RiDownload2Line } from "react-icons/ri";
 
-const event = ({ action, category, label, value }) => {
-  window.gtag("event", action, {
-    event_category: category,
-    event_label: label,
-    value: value,
-  });
-};
-
-const getApp = () => {
-  event({
-    action: "get_app",
-    category: "app",
-    label: "Get App Button Clicked",
-  });
-};
-
 function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -63,7 +47,6 @@ function Navigation() {
               href="https://amuse.app.link/landing_page"
               target="_blank"
               className="flex items-center gap-2 rounded-[4px] bg-primary-200 px-5 py-2 text-center text-sm font-bold capitalize text-primary-500"
-              onClick={() => getApp()}
             >
               <span>
                 <RiDownload2Line size={20} />
