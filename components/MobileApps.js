@@ -1,3 +1,5 @@
+"use client";
+
 import { AppPlatforms } from "@/lib/constants";
 import Image from "next/image";
 import Link from "next/link";
